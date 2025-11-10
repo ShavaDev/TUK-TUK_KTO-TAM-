@@ -6,7 +6,7 @@ import buttons
 symbols = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()"
 length = [6, 8, 10, 12]
 
-bot = telebot.TeleBot('8354047745:AAFbRtegQ-yoyAygTVcFceIawcwxWKRwgmE')
+bot = telebot.TeleBot('TOKEN')
 
 @bot.message_handler(commands=['start'])
 def start(message):
