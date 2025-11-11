@@ -1,9 +1,12 @@
 import random as rd
+import string
 import telebot
 import buttons
 
 
-symbols = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()"
+symbols = (string.ascii_letters
+      + string.digits
+      + string.punctuation)
 length = [6, 8, 10, 12]
 
 bot = telebot.TeleBot('TOKEN')
